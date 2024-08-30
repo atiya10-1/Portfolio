@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&display=swap');
+:root {
+    --brand: #c70610;
+    --dark: #092032;
+    --body: #516171;
+    --border: rgba(0,0,0,0.08);
+    --shadow: 0px 6px 30px rgba(0, 0, 0, 0.08);
+    
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    font-family: "Barlow", sans-serif;
+    color: var(--body);
+    line-height: 1.7;
+}
+
+h1,h2,h3,h4,h5,h6,
+.display-1,.display-2,.display-3,.display-4 {
+    font-weight: 700;
+    color: var(--dark);
+}
+
+.bg-cover {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    color: var(--dark);
+    transition: all 0.4s ease;
+    font-weight: 500;
+}
+
+a:hover {
+    color: var(--brand);
+}
+
+section {
+    padding-top: 80px;
+    padding-bottom: 0%;
+ }
+
+.text-brand {
+    color: var(--brand) !important;
+}
+
+
+.hero-slider .owl-prev,
+.hero-slider .owl-next{
+    background-color: rgba(255, 255, 255, 0.3) !important;
+    width: 60px !important;
+    height: 60px !important;
+    display: block;
+    display: grid;
+    place-items: center;
+    color: #fff !important;
+    border-radius: 100px;
+    line-height: 0;
+    border-radius: 100px !important;
+    position: absolute;
+    top: 50%;
+    font-weight: 600 !important;
+    font-size: 12px !important;
+    transition: all 0.4s ease;
+    margin-top: -30px !important;
+}
+
+.owl-prev {
+    left: 0;
+}
+.owl-next {
+    right: 0;
+}
+
+.hero-slider .owl-prev:hover,
+.hero-slider .owl-next:hover {
+    background-color: var(--brand) !important; 
+}
+
+.owl-dot.active span{
+    background-color: var(--brand) !important;
+}
+
+
+ /* slide */
+ .slide {
+     min-height: 100vh;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     position: relative;
+}
+
+.slide1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/__T3\ NEW\ Complete\ Learn\ to\ Code\ Bundle\ -\ New\ Years\ Resolution\ Success.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.slide2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/webbg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.slide .display-3 {
+    text-transform: uppercase;
+    color: #fff;
+}
+
+/* navbar */
+.top-nav {
+    background-color: var(--brand);
+    color: #fff;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.top-nav p {
+    display: inline-block;
+    margin-bottom: 0;
+    margin-right: 10px;
+}
+
+.top-nav span,
+.top-nav i {
+    vertical-align: middle;
+}
+
+.navbar {
+    box-shadow: var(--shadow);
+}
+
+.social-icons a {
+    width: 28px;
+    height: 28px;
+    display: inline-flex;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.25);
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+}
+
+.social-icons a:hover {
+    background-color: #fff;
+    color: var(--brand);
+}
+.conditions-section{
+    margin: 20px 0;
+
+}
+.conditions-section a{
+   color: #fff;
+   margin: 0 10px;
+}
+
+.navbar .navbar-nav .nav-link {
+    color: var(--dark);
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    color: var(--brand);
+}
+
+.navbar .navbar-nav .nav-link.active {
+    color: var(--brand);
+}
+
+.navbar-brand {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.navbar-brand .dot {
+    color: var(--brand);
+}
+
+.btn {
+    padding: 8px 26px;
+}
+
+.btn-brand {
+    border-color: var(--brand);
+    background-color: var(--brand);
+    color: #fff;
+}
+
+.btn-brand:hover {
+    background-color: #d64022;
+    border-color: #d64022;
+    color: #fff;
+}
+/* 
+================= */
+
+.img-fluid {
+border-radius: 200px;
+}
+#i-about{
+    width: 400px;
+    height: 400px;
+}
+/* 
+Skills progressbar  */
+.skill-section {
+    margin: 2rem 0;
+}
+.mb-4{
+    text-align: center;
+}
+
+.progress-bar-custom {
+    position: relative;
+    height: 30px;
+    background: #f4f4f4;
+    border-radius: 25px;
+}
+.progress-bar-custom .progress-bar {
+    position: absolute;
+    height: 100%;
+    border-radius: 25px;
+    line-height: 30px;
+    color: white;
+    text-align: center;
+    transition: width 0.5s ease-in-out;
+}
+.progress-bar-custom .progress-bar.bg-primary { background-color: #007bff; }
+.progress-bar-custom .progress-bar.bg-success { background-color: #28a745; }
+.progress-bar-custom .progress-bar.bg-danger { background-color: #b41626; }
+
+#pink{
+    background-color: rgb(236, 160, 236);
+}
+#lite{
+    background-color: rgb(247, 152, 28);
+}
+/* ================*/
+/* Portfolio stylng */
+
+.card-project {
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 100%;
+    height: auto; 
+    border-radius: 50px; 
+}
+.card-project:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.card-project img {
+    transition: opacity 0.3s;
+    border-radius: 20px 20px 0 0; /* Adjust image border radius */
+}
+.card-project:hover img {
+    opacity: 0.9;
+}
+
+
+/* =========RESUME STYLING========= */
+body {
+    background-color: #f5f5f5;
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+.resume-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.resume-header h1 {
+    margin: 0;
+    font-size: 2rem;
+    color: #160f0f;
+}
+.resume-header p {
+    margin: 0;
+    font-size: 1.25rem;
+}
+
+.card-custom {
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    margin-bottom: 1rem;
+    height: 1550px;
+    
+}
+.card-header-custom {
+    padding-top: 20px;
+    background-color: #d1c5c3d7;
+    color: black;
+    font-size: 1.25rem;
+    text-align: center;
+    font-weight: 500;
+    height: 80px;
+    border-bottom: none;
+}
+/* SKILL PROGRS
+============ */
+.skills-list .list-group-item {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    border-style: none;
+    margin-bottom: 1px;
+}
+
+
+
+/* FOOTER SECTION */
+
+
+footer a:hover {
+    color: #eb2a2a;
+    text-decoration: underline;
+}
+
+footer i {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+footer .text-warning {
+    color: #eb2a2a !important;
+}
+
+footer .bg-dark {
+    background-color: #333 !important;
+}
+
+/* ======================= */
+
+/*  CONTACT US */
+.card {
+    border-radius: 60px;
+    margin-bottom: 18px;
+
+}
+
+.card-header {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.btn-dark {
+    background-color: #e40f0f;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+}
+
+.btn-dark:hover {
+    background-color: #b30000;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: #161515;
+}
